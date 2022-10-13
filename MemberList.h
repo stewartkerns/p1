@@ -11,6 +11,7 @@ using namespace std;
 
 
 class MemberList {
+
 public:
     MemberList();
     // The constructor initializes all the fields and sets up the members

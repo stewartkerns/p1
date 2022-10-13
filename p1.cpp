@@ -151,17 +151,28 @@ void logoutUser(MemberList*, RatingList*);
 // MODIFY: Se the current users to -1 in the objects
 // OUT: none
 
+void welcome();
+// This method prints a welcome message to the user
+// IN: none
+// MODIFY: none
+// OUT: prints a welcome message
+
+void userBookData(BookList*, MemberList*);
+
 int main(){
     BookList* books = new BookList();
     MemberList* members = new MemberList();
     RatingList* ratings = new RatingList();
 
+    //print the welcome message
+    welcome();
+
     //declare an ifstream object for reading
     ifstream inFile;
 
     //ask the user for the file they would like to read from for the ratings
-//    openFile(inFile, "ratings");
-    inFile.open("C:\\Users\\Stewart\\Desktop\\CPSC5005\\p1\\ratings.txt");
+    openFile(inFile, "ratings");
+
     //add the data from the file into the members and ratings objects
     addMembersRatings(inFile, members, ratings);
 
@@ -169,14 +180,16 @@ int main(){
     inFile.close();
 
     //ask the user for the file they would like to read from for the books
-//    openFile(inFile, "books");
-    inFile.open("C:\\Users\\Stewart\\Desktop\\CPSC5005\\p1\\books.txt");
+    openFile(inFile, "books");
 
     //add the data from the file into the books object
     addBooks(inFile, books);
 
     //close the input file
     inFile.close();
+
+    //print out how many users and books are in the system
+    userBookData(books, members);
 
     //run the first option screen for the user
     firstOptionScreen(books, members, ratings);
@@ -778,3 +791,21 @@ void logoutUser(MemberList* members, RatingList* ratings){
     members->setCurrentMember(-1);
     ratings->setCurrentMember(-1);
 }
+
+void welcome(){
+
+    //print a welcome message to the user
+    cout << "\nWelcome to the Book Recommendation program!\nIf you're new here,"
+            " go ahead and create a user before rating books.\nIf you're not "
+            "new, feel free to log in and see if your recommendations\nhave "
+            "changed!\n\n";
+}
+
+void userBookData(BookList* books, MemberList* members){
+
+    //print out statistics on the number of books and members in the program
+    cout << "\nNumber of books: " << books->size() << "\nNumber of members: "
+    << members->size() << "\n";
+}
+
+

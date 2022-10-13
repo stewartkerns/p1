@@ -1,8 +1,8 @@
 // Stewart Kerns
 // File: BookList.cpp
 // Date: 10/04/2022
-// Purpose: This class holds all the methods and fields needed to create an
-// array of structs that hold book data for a book list
+// Purpose: This class holds all the methods and fields needed to create and
+// operate on an array of structs that hold book data for a book list
 
 #include "BookList.h"
 #include <string>

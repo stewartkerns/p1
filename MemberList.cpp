@@ -1,7 +1,8 @@
 // Stewart Kerns
 // File: MemberList.cpp
 // Date: 10/12/2022
-// Purpose:
+// Purpose: This class holds all the methods and fields in order to create an
+// array of structs that hold data on members as well as operate on that array
 
 #include "MemberList.h"
 #include <string>

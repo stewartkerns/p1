@@ -14,6 +14,7 @@ using namespace std;
 
 
 class RatingList {
+
 public:
     RatingList();
     // The constructor initializes all the fields and sets up the ratings
