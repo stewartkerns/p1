@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="e365c6c3-4530-4ff1-b971-d347ae06dbff" name="cs1" url="http://cs1.seattleu.edu">
+        <fileTransfer rootFolder="/home/st/skerns" accessType="SFTP" host="cs1.seattleu.edu" port="22" sshConfigId="557a1f7c-aee0-4f58-96e0-d0eebb9747ca" sshConfig="skerns@cs1.seattleu.edu:22 password">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>
