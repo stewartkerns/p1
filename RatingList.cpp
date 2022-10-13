@@ -2,7 +2,7 @@
 // File: RatingList.cpp
 // Date: 10/12/2022
 // Purpose: This class holds all the methods and fields in order to create a 2D
-// array of ratings that corresponds to users.  This array can expand 
+// array of ratings that corresponds to users.  This array can expand
 
 #include "RatingList.h"
 #include <string>
